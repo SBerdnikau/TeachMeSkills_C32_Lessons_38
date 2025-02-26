@@ -18,7 +18,6 @@ public class Service {
     @Timed
     public void secondMethod(){
         try {
-            int value  = (int) ( Math.random() * 1000);
             Thread.sleep(getRandomValue());
         }catch (InterruptedException e){
             Thread.currentThread().interrupt();
