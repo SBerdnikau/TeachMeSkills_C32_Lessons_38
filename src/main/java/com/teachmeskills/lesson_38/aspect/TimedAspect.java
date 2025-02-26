@@ -21,7 +21,7 @@ public class TimedAspect {
         long executionTime = System.currentTimeMillis() - startTime;
 
         if (executionTime > 1000) {
-            LOGGER.warn("Method {} completed in {} milliseconds.}", joinPoint.getSignature(), executionTime);
+            LOGGER.warn("Method {} completed in {} milliseconds.", joinPoint.getSignature(), executionTime);
         }else {
             LOGGER.info("Method {} completed in {} milliseconds.", joinPoint.getSignature(), executionTime);
         }
